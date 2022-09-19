@@ -5,7 +5,7 @@ public class IMC {
     public static void calculaIMC() {
         float resultado;
         LeDados r = new LeDados();
-        r.leValores();
+        r.leValores("Insira o peso: ", "Insira a altura: ");
         resultado = (r.valor1 / (r.valor2*r.valor2));
         System.out.println("IMC:" + resultado);
         if (resultado < 18.5)
